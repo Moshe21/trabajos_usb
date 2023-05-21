@@ -52,7 +52,7 @@ int main() {
     return 0;
 }
 
-void menu_ing() {
+int menu_ing(hola){
     // Función para manejar el ingreso al sistema.
     printf("INGRESAR\nUsuario: ");
     scanf("%s", nom_user);
@@ -63,17 +63,11 @@ void menu_ing() {
     // Se utiliza un bucle for para verificar las credenciales ingresadas.
     // Si se encuentran coincidencias, se llama a la función correspondiente.
     // Si no se encuentran coincidencias, se muestra un mensaje de error.
-for(int i=0; i < MAX_USERS; i++){
-        if (strcmp(I[i].reg_nom_user, nom_user) == 0 && strcmp(I[i].reg_pass_user, pass_user) == 0) {
-            menu_prof();
-            return;
-        } else if (strcmp(I[i].reg_nom_user, nom_user) == 0 && strcmp(I[i].reg_pass_user, pass_user) == 0) {
-            printf("Hola querido estudiante\n");
-            menu_estu();
-            return;
-        }
-    }
+for (int g = 0; g < 3; g++) {
+    printf("hola");
+}
     printf("NO ESTAS REGISTRADO\n");
+    return 0;
 }
 
 void menu_reg() {
